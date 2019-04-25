@@ -16,5 +16,12 @@ namespace Chris_Parker_Assignment6
         {
             InitializeComponent();
         }
+
+        private void backPortal_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Portal p = new Portal();
+            p.Show();
+        }
     }
 }

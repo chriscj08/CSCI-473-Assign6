@@ -34,5 +34,26 @@ namespace Chris_Parker_Assignment6
             bg.Show();            
             
         }
+
+        private void PieChart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PieChart pc = new PieChart();
+            pc.Show();
+        }
+
+        private void BubbleChart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BubbleChart bc = new BubbleChart();
+            bc.Show();
+        }
+
+        private void LineGraph_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LineGraph lg = new LineGraph();
+            lg.Show();
+        }
     }
 }

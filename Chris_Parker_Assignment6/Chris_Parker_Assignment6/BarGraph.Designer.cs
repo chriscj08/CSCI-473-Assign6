@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.backPortal = new System.Windows.Forms.Button();
+            this.barGraphLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backPortal
@@ -41,21 +42,35 @@
             this.backPortal.UseVisualStyleBackColor = true;
             this.backPortal.Click += new System.EventHandler(this.backPortal_Click);
             // 
+            // barGraphLabel
+            // 
+            this.barGraphLabel.AutoSize = true;
+            this.barGraphLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barGraphLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.barGraphLabel.Location = new System.Drawing.Point(325, 34);
+            this.barGraphLabel.Name = "barGraphLabel";
+            this.barGraphLabel.Size = new System.Drawing.Size(110, 25);
+            this.barGraphLabel.TabIndex = 1;
+            this.barGraphLabel.Text = "Bar Graph";
+            // 
             // BarGraph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.barGraphLabel);
             this.Controls.Add(this.backPortal);
             this.Name = "BarGraph";
             this.Text = "Form4";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button backPortal;
+        private System.Windows.Forms.Label barGraphLabel;
     }
 }
