@@ -52,7 +52,7 @@ namespace Chris_Parker_Assignment6
         private void LineGraph_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LineGraph  lg = new LineGraph();
+            LineGraph  lg = new LineGraph();            
             lg.Show();
         }
 
