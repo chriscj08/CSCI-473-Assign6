@@ -1,6 +1,6 @@
 ﻿namespace Chris_Parker_Assignment6
 {
-    partial class Form2
+    partial class PieChart
     {
         /// <summary>
         /// Required designer variable.

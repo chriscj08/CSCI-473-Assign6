@@ -1,6 +1,6 @@
 ﻿namespace Chris_Parker_Assignment6
 {
-    partial class Form1
+    partial class Portal
     {
         /// <summary>
         /// Required designer variable.

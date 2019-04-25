@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+
 
 namespace Chris_Parker_Assignment6
 {
-    public partial class Form2 : Form
+    public partial class Portal : Form
     {
-        public Form2()
+        public Portal()
         {
             InitializeComponent();
+        }
+
+        private void Load_Graph(object sender, EventArgs e)
+        {
+            PieChart f2 = new PieChart();
+
+            this.Hide();
+            f2.ShowDialog();
         }
     }
 }
