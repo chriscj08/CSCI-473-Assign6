@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.backPortal = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // backPortal
+            // 
+            this.backPortal.Location = new System.Drawing.Point(358, 393);
+            this.backPortal.Name = "backPortal";
+            this.backPortal.Size = new System.Drawing.Size(75, 23);
+            this.backPortal.TabIndex = 0;
+            this.backPortal.Text = "Back";
+            this.backPortal.UseVisualStyleBackColor = true;
+            this.backPortal.Click += new System.EventHandler(this.backPortal_Click);
+            // 
+            // BarGraph
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backPortal);
+            this.Name = "BarGraph";
             this.Text = "Form4";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button backPortal;
     }
 }

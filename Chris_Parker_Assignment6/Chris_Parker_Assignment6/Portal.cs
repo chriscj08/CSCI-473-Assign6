@@ -26,5 +26,13 @@ namespace Chris_Parker_Assignment6
             this.Hide();
             f2.ShowDialog();
         }
+
+        private void showBarGraph(object sender, EventArgs e)
+        {
+            this.Hide();
+            BarGraph bg = new BarGraph();
+            bg.Show();            
+            
+        }
     }
 }

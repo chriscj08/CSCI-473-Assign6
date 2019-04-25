@@ -85,6 +85,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BarGraph.resx">
+      <DependentUpon>BarGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BubbleChart.resx">
+      <DependentUpon>BubbleChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineGraph.resx">
+      <DependentUpon>LineGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieChart.resx">
+      <DependentUpon>PieChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Portal.resx">
       <DependentUpon>Portal.cs</DependentUpon>
     </EmbeddedResource>
