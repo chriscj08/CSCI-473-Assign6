@@ -34,12 +34,13 @@
             this.backPortal = new System.Windows.Forms.Button();
             this.barGraphLabel = new System.Windows.Forms.Label();
             this.BarGraphChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.loadBarGraph = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BarGraphChart)).BeginInit();
             this.SuspendLayout();
             // 
             // backPortal
             // 
-            this.backPortal.Location = new System.Drawing.Point(358, 393);
+            this.backPortal.Location = new System.Drawing.Point(192, 395);
             this.backPortal.Name = "backPortal";
             this.backPortal.Size = new System.Drawing.Size(75, 23);
             this.backPortal.TabIndex = 0;
@@ -52,11 +53,11 @@
             this.barGraphLabel.AutoSize = true;
             this.barGraphLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barGraphLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.barGraphLabel.Location = new System.Drawing.Point(325, 34);
+            this.barGraphLabel.Location = new System.Drawing.Point(178, 27);
             this.barGraphLabel.Name = "barGraphLabel";
-            this.barGraphLabel.Size = new System.Drawing.Size(110, 25);
+            this.barGraphLabel.Size = new System.Drawing.Size(340, 25);
             this.barGraphLabel.TabIndex = 1;
-            this.barGraphLabel.Text = "Bar Graph";
+            this.barGraphLabel.Text = "Favorite Movie Genres: Bar Graph";
             // 
             // BarGraphChart
             // 
@@ -64,23 +65,36 @@
             this.BarGraphChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.BarGraphChart.Legends.Add(legend1);
-            this.BarGraphChart.Location = new System.Drawing.Point(85, 73);
+            this.BarGraphChart.Location = new System.Drawing.Point(39, 72);
             this.BarGraphChart.Name = "BarGraphChart";
-            this.BarGraphChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            this.BarGraphChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
+            series1.IsVisibleInLegend = false;
             series1.Legend = "Legend1";
-            series1.Name = "Fake Data";
+            series1.Name = "Genre";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
             this.BarGraphChart.Series.Add(series1);
-            this.BarGraphChart.Size = new System.Drawing.Size(648, 300);
+            this.BarGraphChart.Size = new System.Drawing.Size(657, 300);
             this.BarGraphChart.TabIndex = 2;
             this.BarGraphChart.Text = "BarGraphChart";
+            // 
+            // loadBarGraph
+            // 
+            this.loadBarGraph.Location = new System.Drawing.Point(393, 395);
+            this.loadBarGraph.Name = "loadBarGraph";
+            this.loadBarGraph.Size = new System.Drawing.Size(102, 23);
+            this.loadBarGraph.TabIndex = 3;
+            this.loadBarGraph.Text = "Load Bar Graph";
+            this.loadBarGraph.UseVisualStyleBackColor = true;
+            this.loadBarGraph.Click += new System.EventHandler(this.loadBarGraph_Click);
             // 
             // BarGraph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(736, 450);
+            this.Controls.Add(this.loadBarGraph);
             this.Controls.Add(this.BarGraphChart);
             this.Controls.Add(this.barGraphLabel);
             this.Controls.Add(this.backPortal);
@@ -98,5 +112,6 @@
         private System.Windows.Forms.Button backPortal;
         private System.Windows.Forms.Label barGraphLabel;
         private System.Windows.Forms.DataVisualization.Charting.Chart BarGraphChart;
+        private System.Windows.Forms.Button loadBarGraph;
     }
 }
