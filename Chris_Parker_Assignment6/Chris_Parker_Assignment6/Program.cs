@@ -18,6 +18,7 @@ namespace Chris_Parker_Assignment6
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
         }
     }
 }

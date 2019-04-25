@@ -18,5 +18,15 @@ namespace Chris_Parker_Assignment6
         {
             InitializeComponent();
         }
+
+        private void Load_Graph(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            Form2 f2 = new Form2();
+
+            f1.Hide();
+            f2.ShowDialog();
+
+        }
     }
 }
