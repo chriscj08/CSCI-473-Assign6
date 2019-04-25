@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Chris_Parker_Assignment6
 {
-    public partial class Form3 : Form
+    public partial class BubbleChart : Form
     {
-        public Form3()
+        public BubbleChart()
         {
             InitializeComponent();
         }

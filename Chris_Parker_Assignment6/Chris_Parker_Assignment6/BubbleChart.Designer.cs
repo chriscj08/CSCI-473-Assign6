@@ -1,6 +1,6 @@
 ﻿namespace Chris_Parker_Assignment6
 {
-    partial class Form3
+    partial class BubbleChart
     {
         /// <summary>
         /// Required designer variable.
