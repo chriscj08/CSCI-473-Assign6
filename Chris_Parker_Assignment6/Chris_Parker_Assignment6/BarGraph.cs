@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Chris_Parker_Assignment6
 {
-    public partial class Form5 : Form
+    public partial class BarGraph : Form
     {
-        public Form5()
+        public BarGraph()
         {
             InitializeComponent();
         }

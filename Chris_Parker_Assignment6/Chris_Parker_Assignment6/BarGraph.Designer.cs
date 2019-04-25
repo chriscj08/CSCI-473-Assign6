@@ -1,6 +1,6 @@
 ﻿namespace Chris_Parker_Assignment6
 {
-    partial class Form5
+    partial class BarGraph
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form5";
+            this.Text = "Form4";
         }
 
         #endregion

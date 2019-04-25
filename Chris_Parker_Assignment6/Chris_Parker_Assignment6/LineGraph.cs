@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Chris_Parker_Assignment6
 {
-    public partial class Form4 : Form
+    public partial class LineGraph : Form
     {
-        public Form4()
+        public LineGraph()
         {
             InitializeComponent();
         }
