@@ -23,5 +23,12 @@ namespace Chris_Parker_Assignment6
             Portal p = new Portal();
             p.Show();
         }
+
+        private void PieChart_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            Portal p = new Portal();
+            p.Show();
+        }
     }
 }

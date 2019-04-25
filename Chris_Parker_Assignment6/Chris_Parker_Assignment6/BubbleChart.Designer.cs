@@ -63,6 +63,7 @@
             this.Controls.Add(this.pieChartLabel);
             this.Name = "BubbleChart";
             this.Text = "Form3";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BubbleChart_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

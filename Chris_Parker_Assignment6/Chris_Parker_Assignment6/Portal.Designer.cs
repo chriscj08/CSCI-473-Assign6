@@ -33,6 +33,7 @@
             this.BubbleChart = new System.Windows.Forms.Button();
             this.LineGraph = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Bar_Graph
@@ -86,12 +87,23 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Portal";
             // 
+            // Exit
+            // 
+            this.Exit.Location = new System.Drawing.Point(123, 226);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(92, 23);
+            this.Exit.TabIndex = 5;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LineGraph);
             this.Controls.Add(this.BubbleChart);
@@ -99,6 +111,7 @@
             this.Controls.Add(this.Bar_Graph);
             this.Name = "Portal";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Portal_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,6 +124,7 @@
         private System.Windows.Forms.Button BubbleChart;
         private System.Windows.Forms.Button LineGraph;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Exit;
     }
 }
 

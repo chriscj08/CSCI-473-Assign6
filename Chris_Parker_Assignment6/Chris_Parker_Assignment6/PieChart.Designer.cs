@@ -63,6 +63,7 @@
             this.Controls.Add(this.pieChartLabel);
             this.Name = "PieChart";
             this.Text = "Form2";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PieChart_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

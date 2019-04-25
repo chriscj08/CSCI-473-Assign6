@@ -18,6 +18,15 @@ namespace Chris_Parker_Assignment6
         }
 
         private void backPortal_Click(object sender, EventArgs e)
+        {           
+            Portal p = new Portal();
+            p.Show();
+
+            LineGraph lg = new LineGraph();
+            lg.Hide();
+        }
+
+        private void LineGraph_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
             Portal p = new Portal();

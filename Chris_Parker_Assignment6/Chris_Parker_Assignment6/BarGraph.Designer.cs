@@ -63,6 +63,7 @@
             this.Controls.Add(this.backPortal);
             this.Name = "BarGraph";
             this.Text = "Form4";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BarGraph_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -52,8 +52,18 @@ namespace Chris_Parker_Assignment6
         private void LineGraph_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LineGraph lg = new LineGraph();
+            LineGraph  lg = new LineGraph();
             lg.Show();
+        }
+
+        private void Portal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
