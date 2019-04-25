@@ -21,7 +21,7 @@ namespace Chris_Parker_Assignment6
 
         private void Load_Graph(object sender, EventArgs e)
         {
-            PieChart f2 = new PieChart();
+           PieChart f2 = new PieChart();
 
             this.Hide();
             f2.ShowDialog();
