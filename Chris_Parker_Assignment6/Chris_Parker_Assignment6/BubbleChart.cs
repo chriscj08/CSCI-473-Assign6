@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,25 @@ namespace Chris_Parker_Assignment6
             this.Hide();
             Portal p = new Portal();
             p.Show();
+        }
+
+        private void loadBubbleChart(object sender, EventArgs e)
+        {
+            using (StreamReader inFile = new StreamReader("bubbleChartData"))
+            {
+                string line = inFile.ReadLine();
+
+                while (line != null)
+                {
+                    string[] split = line.Split(',');
+
+                    chart1.Series["FORCE (NEWTONS)"].Points.AddXY(Convert.ToInt32(split[0]), Convert.ToInt32(split[1]), Convert.ToInt32(split[2]));
+
+                    line = inFile.ReadLine();
+                }
+            }
+ 
+            button1.Enabled = false;
         }
     }
 }
