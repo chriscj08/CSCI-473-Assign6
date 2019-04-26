@@ -1,4 +1,7 @@
-﻿using System;
+﻿/* Programmers: Chris Jurrens and Parker Cox
+ * Assingment 6: Uncharted
+ * */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +20,9 @@ namespace Chris_Parker_Assignment6
         public Portal()
         {
             InitializeComponent();
-        }
+        }                
 
-        private void Load_Graph(object sender, EventArgs e)
-        {
-           PieChart f2 = new PieChart();
-
-            this.Hide();
-            f2.ShowDialog();
-        }
-
+        //switches to barGraph form
         private void showBarGraph(object sender, EventArgs e)
         {
             this.Hide();
@@ -34,7 +30,7 @@ namespace Chris_Parker_Assignment6
             bg.Show();            
             
         }
-
+        //switches to pieChart form
         private void PieChart_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -42,6 +38,7 @@ namespace Chris_Parker_Assignment6
             pc.Show();
         }
 
+        //switches to bubbleChart Form
         private void BubbleChart_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -49,6 +46,7 @@ namespace Chris_Parker_Assignment6
             bc.Show();
         }
 
+        //Switches to lineGraph chart
         private void LineGraph_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -56,11 +54,13 @@ namespace Chris_Parker_Assignment6
             lg.Show();
         }
 
+        //handles closing the form
         private void Portal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
+        //handles closiung the form
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
